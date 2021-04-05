@@ -29,7 +29,6 @@ class _VerifyingScreenState extends State<VerifyingScreen> {
 
   // We first do the verification with the given data.
   Future<dynamic> _getVerified() async {
-    log("get Verified");
     var url = widget.isProduction ? ProductionAPI.verify : TestAPI.verify;
     var response;
 
@@ -49,8 +48,6 @@ class _VerifyingScreenState extends State<VerifyingScreen> {
     } catch (e) {
       log(e.toString());
     }
-
-    log("Verify reponse = " + response.body.toString());
 
     if (widget.isUPI) {
       verifyModel = VerifyModelUPI.fromJson(json.decode(response.body));
