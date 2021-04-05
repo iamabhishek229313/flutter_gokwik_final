@@ -23,7 +23,6 @@ dependencies:
   progress_dialog: ^1.2.4
   sms_otp_auto_verify: ^1.2.2
   timer_button: ^1.0.1
-  decimal:
   flutter_countdown_timer: ^4.0.2
 
 dev_dependencies:

@@ -230,7 +230,6 @@ class _UPIPayScreenState extends State<UPIPayScreen> {
                   child: FutureBuilder<List<ApplicationMeta>>(
                     future: _appsFuture,
                     builder: (context, snapshot) {
-                      log("Number of system apps are + " + snapshot.data.length.toString() ?? "null");
                       if (!snapshot.hasData)
                         return Container(
                           height: screenHeight * 0.4,
